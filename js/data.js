@@ -1,0 +1,188 @@
+export const text = {
+    info: 'ตำแหน่ง : ',
+    contact: 'ช่องทางการติดต่อ',
+}
+
+export const member = {
+    u011: {
+        name: 'เสือ',
+        info1: 'หัวหน้าแก๊ง',
+        info2: 'สัมภาษณ์สมาชิกใหม่',
+        info3: '',
+        detail: '⭕<br>2003-09-14<br>(ชาย 20 ปี)',
+        fblink: 'https://www.facebook.com/profile.php?id=100012402276608',
+        iglink: 'https://www.instagram.com/ltgx_dz/',
+        discordUserID: '538725515029118977',
+    },
+
+    u012: {
+        name: 'ดิว',
+        info1: 'รองหัวหน้าแก๊ง',
+        info2: 'สัมภาษณ์สมาชิกใหม่',
+        info3: '',
+        detail: '⭕<br>20??-06-18<br>(หญิง ? ปี)',
+        fblink: 'https://www.facebook.com/chananuch.akkawanno.5',
+        iglink: 'https://www.instagram.com/an_ahc/',
+        discordUserID: '893757315130466324',
+    },
+
+    u013: {
+        name: 'มวย',
+        info1: 'รองหัวหน้าแก๊ง',
+        info2: 'สัมภาษณ์สมาชิกใหม่',
+        info3: '',
+        detail: '⭕<br>2006-04-23<br>(หญิง 17 ปี)',
+        fblink: 'https://www.facebook.com/mimi.mathusonsawan',
+        iglink: 'https://www.instagram.com/_.mimi._.mm._/',
+        discordUserID: '864730746677100554',
+    },
+
+    u014: {
+        name: 'พี',
+        info1: 'สัมภาษณ์สมาชิกใหม่',
+        info2: 'นักพัฒนา',
+        info3: '',
+        detail: '🌟<br>2002-03-17<br>(ชาย 21 ปี)',
+        fblink: 'https://www.facebook.com/vampirepp11',
+        iglink: 'https://www.instagram.com/naru_sannnnn/',
+        xtlink: 'https://nanosannn.github.io/AboutMe.github.io/',
+        xticon: 'background-image: url("https://avatars.githubusercontent.com/u/77852240?v=4");',
+        discordUserID: '731022611521208340',
+    },
+
+    u015: {
+        name: 'สตาร์',
+        info1: 'สมาชิก',
+        info2: '',
+        info3: '',
+        detail: '🌟<br>200?-??-??<br>(หญิง ? ปี)',
+        fblink: 'https://www.facebook.com/profile.php?id=100071989524785',
+        iglink: '',
+        discordUserID: '847009697738653757',
+    },
+
+    u016: {
+        name: 'นวย',
+        info1: 'สัมภาษณ์สมาชิกใหม่',
+        info2: '',
+        info3: '',
+        detail: '⭕<br>2003-??-??<br>(หญิง 20 ปี)',
+        fblink: 'https://www.facebook.com/chonnipha.khamkhunna.7',
+        iglink: '',
+        discordUserID: '757654795669602447',
+    },
+
+    u017: {
+        name: 'มุก',
+        info1: 'สมาชิก',
+        info2: '',
+        info3: '',
+        detail: '⭕<br>200?-??-??<br>(หญิง ? ปี)',
+        fblink: 'https://www.facebook.com/ketmanee.phosrithong.9',
+        iglink: 'https://www.instagram.com/m.o.o.k_07/',
+        discordUserID: '979480679324713021',
+    },
+
+    u018: {
+        name: 'ชิบะ',
+        info1: 'สมาชิก',
+        info2: '',
+        info3: '',
+        detail: '⭕<br>2004-??-??<br>(หญิง 19 ปี)',
+        fblink: 'https://www.facebook.com/pthwaynli',
+        iglink: 'https://www.instagram.com/china_n.1/',
+        discordUserID: '685083176648835108',
+    },
+
+    u019: {
+        name: 'บอส',
+        info1: 'สมาชิก',
+        info2: '',
+        info3: '',
+        detail: '⭕<br>200?-09-18<br>(ชาย ? ปี)',
+        fblink: 'https://www.facebook.com/profile.php?id=100079851473740',
+        iglink: 'https://www.instagram.com/zhaonine_z/',
+        discordUserID: '949728794460188672',
+    },
+
+    u020: {
+        name: 'โรฮาน',
+        info1: 'สมาชิก',
+        info2: '',
+        info3: '',
+        detail: '⭕<br>2007-??-??<br>(ชาย 16 ปี)',
+        fblink: 'https://www.facebook.com/wanpimuk.kannirund.50',
+        iglink: 'https://www.instagram.com/_gravity.exe/',
+        discordUserID: '694445769897279510',
+    },
+
+    u021: {
+        name: 'ไทม์',
+        info1: 'สมาชิก',
+        info2: '',
+        info3: '',
+        detail: '⭕<br>2002-09-28<br>(ชาย 21 ปี)<br><a class="detail-link" href="../darkzone_test/spankbang.html" target="_blank">ผมชอบสิ่งนี้</a>',
+        fblink: 'https://www.facebook.com/profile.php?id=100009430110511',
+        iglink: 'https://www.instagram.com/_sxrnr_m/',
+        discordUserID: '470251864710184960',
+    },
+
+    u022: {
+        name: 'หมี',
+        info1: 'สมาชิก',
+        info2: 'นักพัฒนา',
+        info3: '',
+        detail: '🌟<br>2005-01-17<br>(ชาย 18 ปี)',
+        fblink: 'https://www.facebook.com/mheekyaru',
+        iglink: 'https://www.instagram.com/9mhee/',
+        xtlink: 'https://cutt.ly/mheekyaru',
+        xticon: 'background-image: url("./images/9mhee.jpg");',
+        discordUserID: '689071460299309132',
+    },
+
+    u023: {
+        name: 'แพน',
+        info1: 'สมาชิก',
+        info2: '',
+        info3: '',
+        detail: '🌟<br>2007-02-11<br>(หญิง 16 ปี)',
+        fblink: 'https://www.facebook.com/nichapat.songjoho',
+        iglink: 'https://www.instagram.com/nappingpan/',
+        xtlink: 'https://lit.link/en/nappingpan',
+        xticon: 'background-image: url("./images/litlink.jpg");',
+        discordUserID: '771240553409019904',
+    },
+
+    u024: {
+        name: 'เมย์',
+        info1: 'สมาชิก',
+        info2: '',
+        info3: '',
+        detail: '⭕<br>2005-??-??<br>(หญิง 18 ปี)',
+        fblink: 'https://www.facebook.com/profile.php?id=100087679180340',
+        iglink: 'https://www.instagram.com/',
+        discordUserID: '1001203230946107542',
+    },
+
+    u025: {
+        name: 'บิว',
+        info1: 'สมาชิก',
+        info2: '',
+        info3: '',
+        detail: '⭕<br>2005-??-??<br>(ชาย 18 ปี)',
+        fblink: 'https://www.facebook.com/sornramChirakuntham',
+        iglink: 'https://www.instagram.com/bxwm_xi05/',
+        discordUserID: '1067113611417366538',
+    },
+
+    u026: {
+        name: 'ไปร์ท',
+        info1: 'สมาชิก',
+        info2: '',
+        info3: '',
+        detail: '⭕<br>2006-??-??<br>(ชาย 17 ปี)',
+        fblink: 'https://www.facebook.com/profile.php?id=100089209016910',
+        iglink: 'https://www.instagram.com/',
+        discordUserID: '1080543324118716427',
+    },
+}

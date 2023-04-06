@@ -1,0 +1,94 @@
+.navigation-bar-light {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4));
+}
+
+.head-text-light {
+    color: #ffa31a;
+    background-color: #7d7d7d;
+}
+
+.copyText-dialog-font-light {
+    color: black;
+}
+
+.theme-btn-light {
+    color: white;
+    background-color: #ffa31a;
+}
+
+.theme-btn-light:hover {
+    color: black;
+}
+
+.scroll-up-btn-light {
+    background-color: #ffa31a;
+    color: white;
+    border-color: #d0d0d0;
+}
+
+.interact-box-light {
+    color: white;
+    background-color: #ffa31a;
+}
+
+.interact-box-light:hover {
+    border-color: #ecc16f;
+}
+
+.interact-btn-light {
+    color: black;
+    background-color: #ecc16f;
+}
+
+.interact-btn-light:hover {
+    color: white;
+    background-color: #ffa31a;
+}
+
+.sheet-light {
+    background-color: #d0d0d0;
+}
+
+.item-sheet-light {
+    background-color: #d0d0d0;
+}
+
+.item-content-light {
+    background-color: white;
+}
+
+.member-name-light {
+    color: black;
+    background-color: #ecc16f;
+}
+
+.member-profile-block-light {
+    border-color: #ecc16f;
+}
+
+.member-profile-detail-light {
+    color: white;
+    background-color: #ffa31a;
+
+}
+
+.member-info-light {
+    color: black;
+    background-color: #ffa31a;
+}
+
+.member-info-light:hover {
+    border-color: #ecc16f;
+}
+
+.member-info-text-light {
+    color: white;
+}
+
+@media (max-width: 330px) {
+    .not-support-text-light {
+        color: black;
+    }
+}

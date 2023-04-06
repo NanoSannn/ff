@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Dark Zone</title>
+  <link rel="icon" href="./images/darkzone.bmp" type="image/icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/member.css">
+  <link rel="stylesheet" href="./css/light.css">
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/loading.css">
+
+  <link id="google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=400|Itim:400|Noto+Sans+Thai:400,700|Noto+Sans:700|Fugaz+One:400|Kanit:400,500">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="background-color fade-in-animation">
+
+  <header class="navigation-bar align-center"><a href="./main.html" class="navbar-btn-home">หน้าหลัก</a></header>
+
+  <div class="loading-screen-index" id="loadingScreen2" style="display: none;"></div>
+  <div class="loading-screen" id="loadingScreen">
+    <p class="loading-screen-text" id="loadingText"></p>
+    <img class="loading-screen-gif fade-in-animation" id="loadingAnimation">
+    <img class="loading-screen-gif fade-in-animation" id="loadingAnimation2" style="display: none;">
+  </div>
+
+  <div class="not-support fade-in-animation" style="animation-delay: 4.5s;">
+
+    <h2 class="head-text align-center">รายชื่อสมาชิก<span style="color: white;"> Dark </span>
+      <button class="theme-btn" id="theme">Zone</button><br>
+      <!--button id="scroll-down-btn" class="scroll-down-btn">
+        ดูรายชื่อ
+      </button-->
+      <input class="interact-box" id="interact-box"></input>
+      <button class="interact-btn" id="interact-btn">GO</button>
+    </h2>
+
+    <button onclick="topFunction()" id="scrollUp" class="scroll-up-btn">ขึ้น</button>
+
+    <section class="section-1" id="u011">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u011_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u011_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u011_name"></h4>
+          <p class="align-left member-info"><span id="u011_info"></span>
+            <span class="member-info-text" id="u011_info_1"></span> ,
+            <span class=" member-info-text" id="u011_info_2"></span> ,
+            <span class="member-info-text" id="u011_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u011_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u011_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u011_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u011_dc_name" id="u011_dc_copy">
+              <input class="member-discord-name" id="u011_dc_name" readonly>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2" id="u012">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u012_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u012_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u012_name"></h4>
+          <p class="align-left member-info"><span id="u012_info"></span>
+            <span class="member-info-text" id="u012_info_1"></span> ,
+            <span class=" member-info-text" id="u012_info_2"></span> ,
+            <span class="member-info-text" id="u012_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u012_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u012_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u012_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u012_dc_name" id="u012_dc_copy">
+              <input class="member-discord-name" id="u012_dc_name" readonly>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-3" id="u013">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u013_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u013_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u013_name"></h4>
+          <p class="align-left member-info"><span id="u013_info"></span>
+            <span class="member-info-text" id="u013_info_1"></span> ,
+            <span class=" member-info-text" id="u013_info_2"></span> ,
+            <span class="member-info-text" id="u013_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u013_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u013_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u013_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u013_dc_name" id="u013_dc_copy">
+              <input class="member-discord-name" id="u013_dc_name" readonly>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-4" id="u014">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u014_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u014_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u014_name"></h4>
+          <p class="align-left member-info"><span id="u014_info"></span>
+            <span class="member-info-text" id="u014_info_1"></span> ,
+            <span class=" member-info-text" id="u014_info_2"></span> ,
+            <span class="member-info-text" id="u014_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u014_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u014_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u014_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u014_dc_name" id="u014_dc_copy">
+              <input class="member-discord-name" id="u014_dc_name" readonly>
+            </button>
+            <a class="member-social-icon member-external-icon align-right" id="u014_xt_link" target="_blank"></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-5" id="u015">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u015_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u015_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u015_name"></h4>
+          <p class="align-left member-info"><span id="u015_info"></span>
+            <span class="member-info-text" id="u015_info_1"></span> ,
+            <span class=" member-info-text" id="u015_info_2"></span> ,
+            <span class="member-info-text" id="u015_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u015_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u015_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u015_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u015_dc_name" id="u015_dc_copy">
+              <input class="member-discord-name" id="u015_dc_name" readonly>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-6" id="u016">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u016_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u016_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u016_name"></h4>
+          <p class="align-left member-info"><span id="u016_info"></span>
+            <span class="member-info-text" id="u016_info_1"></span> ,
+            <span class=" member-info-text" id="u016_info_2"></span> ,
+            <span class="member-info-text" id="u016_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u016_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u016_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u016_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u016_dc_name" id="u016_dc_copy">
+              <input class="member-discord-name" id="u016_dc_name" readonly>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-7" id="u017">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u017_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u017_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u017_name"></h4>
+          <p class="align-left member-info"><span id="u017_info"></span>
+            <span class="member-info-text" id="u017_info_1"></span> ,
+            <span class=" member-info-text" id="u017_info_2"></span> ,
+            <span class="member-info-text" id="u017_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u017_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u017_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u017_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u017_dc_name" id="u017_dc_copy">
+              <input class="member-discord-name" id="u017_dc_name" readonly>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-8" id="u018">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u018_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u018_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u018_name"></h4>
+          <p class="align-left member-info"><span id="u018_info"></span>
+            <span class="member-info-text" id="u018_info_1"></span> ,
+            <span class=" member-info-text" id="u018_info_2"></span> ,
+            <span class="member-info-text" id="u018_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u018_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u018_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u018_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u018_dc_name" id="u018_dc_copy">
+              <input class="member-discord-name" id="u018_dc_name" readonly>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-9" id="u019">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u019_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u019_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u019_name"></h4>
+          <p class="align-left member-info"><span id="u019_info"></span>
+            <span class="member-info-text" id="u019_info_1"></span> ,
+            <span class=" member-info-text" id="u019_info_2"></span> ,
+            <span class="member-info-text" id="u019_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u019_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u019_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u019_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u019_dc_name" id="u019_dc_copy">
+              <input class="member-discord-name" id="u019_dc_name" readonly>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-10" id="u020">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u020_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u020_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u020_name"></h4>
+          <p class="align-left member-info"><span id="u020_info"></span>
+            <span class="member-info-text" id="u020_info_1"></span> ,
+            <span class=" member-info-text" id="u020_info_2"></span> ,
+            <span class="member-info-text" id="u020_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u020_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u020_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u020_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u020_dc_name" id="u020_dc_copy">
+              <input class="member-discord-name" id="u020_dc_name" readonly>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-11" id="u021">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u021_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u021_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u021_name"></h4>
+          <p class="align-left member-info"><span id="u021_info"></span>
+            <span class="member-info-text" id="u021_info_1"></span> ,
+            <span class=" member-info-text" id="u021_info_2"></span> ,
+            <span class="member-info-text" id="u021_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u021_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u021_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u021_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u021_dc_name" id="u021_dc_copy">
+              <input class="member-discord-name" id="u021_dc_name" readonly>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-12" id="u022">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u022_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u022_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u022_name"></h4>
+          <p class="align-left member-info"><span id="u022_info"></span>
+            <span class="member-info-text" id="u022_info_1"></span> ,
+            <span class=" member-info-text" id="u022_info_2"></span> ,
+            <span class="member-info-text" id="u022_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u022_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u022_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u022_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u022_dc_name" id="u022_dc_copy">
+              <input class="member-discord-name" id="u022_dc_name" readonly>
+            </button>
+            <a class="member-social-icon member-external-icon align-right" id="u022_xt_link" target="_blank"></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-13" id="u023">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u023_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u023_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u023_name"></h4>
+          <p class="align-left member-info"><span id="u023_info"></span>
+            <span class="member-info-text" id="u023_info_1"></span> ,
+            <span class=" member-info-text" id="u023_info_2"></span> ,
+            <span class="member-info-text" id="u023_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u023_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u023_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u023_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u023_dc_name" id="u023_dc_copy">
+              <input class="member-discord-name" id="u023_dc_name" readonly>
+            </button>
+            <a class="member-social-icon member-external-icon align-right" id="u023_xt_link" target="_blank"></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-14" id="u024">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u024_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u024_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u024_name"></h4>
+          <p class="align-left member-info"><span id="u024_info"></span>
+            <span class="member-info-text" id="u024_info_1"></span> ,
+            <span class=" member-info-text" id="u024_info_2"></span> ,
+            <span class="member-info-text" id="u024_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u024_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u024_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u024_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u024_dc_name" id="u024_dc_copy">
+              <input class="member-discord-name" id="u024_dc_name" readonly>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-15" id="u025">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u025_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u025_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u025_name"></h4>
+          <p class="align-left member-info"><span id="u025_info"></span>
+            <span class="member-info-text" id="u025_info_1"></span> ,
+            <span class=" member-info-text" id="u025_info_2"></span> ,
+            <span class="member-info-text" id="u025_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u025_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u025_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u025_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u025_dc_name" id="u025_dc_copy">
+              <input class="member-discord-name" id="u025_dc_name" readonly>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-16" id="u026">
+      <div class="item-sheet">
+        <div class="item-content">
+          <div class="member-profile-block">
+            <div class="member-profile-inner">
+              <div class="member-profile" id="u026_profile">
+              </div>
+              <div class="member-profile-detail">
+                <p class="member-profile-detail-text" id="u026_detail"></p>
+              </div>
+            </div>
+          </div>
+          <h4 class="align-center member-name" id="u026_name"></h4>
+          <p class="align-left member-info"><span id="u026_info"></span>
+            <span class="member-info-text" id="u026_info_1"></span> ,
+            <span class=" member-info-text" id="u026_info_2"></span> ,
+            <span class="member-info-text" id="u026_info_3"></span>
+          </p>
+          <p class=" align-left member-contact"><span id="u026_contact"></span>
+            <a class="member-social-icon member-facebook-icon" id="u026_fb_link" target="_blank"></a>
+            <a class="member-social-icon member-instragram-icon" id="u026_ig_link" target="_blank"></a>
+            <button class="member-social-icon member-discord-icon" data-clipboard-action="copy"
+              data-clipboard-target="#u026_dc_name" id="u026_dc_copy">
+              <input class="member-discord-name" id="u026_dc_name" readonly>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/scroll.js"></script>
+    <script src="./js/clipboard.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/loading.js"></script>
+    <script src="./js/member.js" type="module"></script>
+    <script src="./js/data.js" type="module"></script>
+    <script src="./js/discordlookupAPI.js" type="module"></script>
+    <script src="./js/interact.js" type="module"></script>
+
+  </div>
+  <p class="not-support-text align-center " id="not-support">หน้าเพจนี้<br>ไม่สามารถแสดงผล<br>บนอุปกรณ์ของคุณได้<br>
+    <a href="./index.html" class="about-link">หน้าหลัก</a><br>
+  <p>
+</body>
+
+<footer class="footer align-center not-support-text" style="height: 25px;">
+  <a href="./member.classic.html" class="about-link-footer">ดำเกินการต่อ
+  </a>
+</footer>
+
+</html>
